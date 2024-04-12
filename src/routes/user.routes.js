@@ -21,6 +21,8 @@ router.post(
 );
 router.use(authMiddleware.protect);
 
+router.get("/", userController.getUsers);
+
 router
   .route("/:id")
   .patch(
