@@ -59,7 +59,7 @@ exports.deleteRole = catchAsync(async (req, res, next) => {
 
   if (!role) return next(new AppError("Rol no encontrado!", 404));
 
-  await role.update({ estado_rol: "Inactivo" });
+  await role.destroy();
 
   res.status(204).json({
     status: "success",

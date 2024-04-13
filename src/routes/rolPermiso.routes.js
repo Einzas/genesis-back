@@ -6,7 +6,7 @@ const rolePermissionController = require("../controllers/rolPermiso.controller")
 
 const router = express.Router();
 
-//router.use(authMiddleware.protect);
+router.use(authMiddleware.protect);
 
 router
   .route("/")

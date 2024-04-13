@@ -6,7 +6,7 @@ const permissionController = require("../controllers/permiso.controller");
 
 const router = express.Router();
 
-//router.use(authMiddleware.protect);
+router.use(authMiddleware.protect);
 
 router
   .route("/")
