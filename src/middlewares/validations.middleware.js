@@ -98,6 +98,98 @@ exports.loginValidation = [
   validField,
 ];
 
+exports.createCategoriaValidation = [
+  body("nombre_categoria")
+    .notEmpty()
+    .withMessage("El nombre de la categoría es requerido!"),
+  validField,
+];
+
+exports.updateCategoriaValidation = [
+  body("nombre_categoria")
+    .notEmpty()
+    .withMessage("El nombre de la categoría es requerido!"),
+  validField,
+];
+
+exports.createCursoValidation = [
+  body("nombre_curso")
+    .notEmpty()
+    .withMessage("El nombre del curso es requerido!"),
+  body("descripcion_curso")
+    .notEmpty()
+    .withMessage("La descripción del curso es requerida!"),
+  body("precio_curso")
+    .notEmpty()
+    .withMessage("El precio del curso es requerido!"),
+  body("profesor_curso")
+    .notEmpty()
+    .withMessage("El nombre del profesor del curso es requerido!"),
+  validField,
+];
+
+exports.updateCursoValidation = [
+  body("nombre_curso")
+    .notEmpty()
+    .withMessage("El nombre del curso es requerido!"),
+  body("descripcion_curso")
+    .notEmpty()
+    .withMessage("La descripción del curso es requerida!"),
+  body("precio_curso")
+    .notEmpty()
+    .withMessage("El precio del curso es requerido!"),
+  body("profesor_curso")
+    .notEmpty()
+    .withMessage("El nombre del profesor del curso es requerido!"),
+  validField,
+];
+
+exports.createSeccionCursoValidation = [
+  body("nombre_seccion")
+    .notEmpty()
+    .withMessage("El nombre de la sección es requerido!"),
+  body("curso_id").notEmpty().withMessage("El ID del curso es requerido!"),
+  validField,
+];
+
+exports.updateSeccionCursoValidation = [
+  body("nombre_seccion")
+    .notEmpty()
+    .withMessage("El nombre de la sección es requerido!"),
+  body("curso_id").notEmpty().withMessage("El ID del curso es requerido!"),
+  validField,
+];
+
+exports.createLeccionSeccionValidation = [
+  body("nombre_leccion")
+    .notEmpty()
+    .withMessage("El nombre de la lección es requerido!"),
+  body("seccion_id")
+    .notEmpty()
+    .withMessage("El ID de la sección es requerido!"),
+  validField,
+];
+
+exports.updateLeccionSeccionValidation = [
+  body("nombre_leccion")
+    .notEmpty()
+    .withMessage("El nombre de la lección es requerido!"),
+  body("seccion_id")
+    .notEmpty()
+    .withMessage("El ID de la sección es requerido!"),
+  validField,
+];
+
+exports.createContenidoLeccionValidation = [
+  body("tipo_contenido")
+    .notEmpty()
+    .withMessage("El tipo de contenido es requerido!"),
+  body("leccion_id")
+    .notEmpty()
+    .withMessage("El ID de la lección es requerido!"),
+  validField,
+];
+
 /* exports.createRestaurantValidation = [
   body("name").notEmpty().withMessage("Name is required!"),
   body("address").notEmpty().withMessage("Address is required!"),
