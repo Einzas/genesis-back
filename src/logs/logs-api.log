@@ -62,3 +62,8 @@ notNull Violation: User.dni cannot be null || undefined undefined
 [2024-04-10T02:34:42.507Z] info: Validation error || undefined undefined
 [2024-04-10T02:35:01.846Z] info: Validation error || undefined undefined
 [2024-04-10T02:35:30.600Z] info: Validation error || undefined undefined
+[2024-05-03T16:21:21.549Z] info: Cannot read properties of undefined (reading 'toLowerCase') || undefined undefined
+[2024-05-03T16:22:57.133Z] info: User.findById is not a function || undefined undefined
+[2024-05-03T16:29:53.720Z] info: Table 'genesis.users' doesn't exist || undefined undefined
+[2024-05-03T16:31:15.130Z] info: User with that email not found! || undefined undefined
+[2024-05-03T16:31:17.846Z] info: User with that email not found! || undefined undefined

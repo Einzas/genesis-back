@@ -15,6 +15,14 @@ const roleRouter = require("./routes/rol.routes");
 const permissionRouter = require("./routes/permiso.routes");
 const rolePermissionRouter = require("./routes/rolPermiso.routes");
 
+//cursos
+const categoriaRouter = require("./routes/curso/categoria.routes");
+const cursoRouter = require("./routes/curso/curso.routes");
+const seccionCursoRouter = require("./routes/curso/seccion_curso.routes");
+const leccionSeccionRouter = require("./routes/curso/leccion_seccion.routes");
+const contenidoLeccionRouter = require("./routes/curso/contenido_leccion.routes");
+
+
 const app = express();
 
 // Set security HTTP headers
@@ -57,6 +65,14 @@ app.use("/api/v1/users", userRouter);
 app.use("/api/v1/roles", roleRouter);
 app.use("/api/v1/permissions", permissionRouter);
 app.use("/api/v1/roles-permissions", rolePermissionRouter);
+
+//cursos
+app.use("/api/v1/categorias", categoriaRouter);
+app.use("/api/v1/cursos", cursoRouter);
+app.use("/api/v1/secciones-cursos", seccionCursoRouter);
+app.use("/api/v1/lecciones-secciones", leccionSeccionRouter);
+app.use("/api/v1/contenidos-lecciones", contenidoLeccionRouter);
+
 // Error handler
 app.all("*", (req, res, next) => {
   next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
