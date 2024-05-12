@@ -122,9 +122,6 @@ exports.createCursoValidation = [
   body("precio_curso")
     .notEmpty()
     .withMessage("El precio del curso es requerido!"),
-  body("profesor_curso")
-    .notEmpty()
-    .withMessage("El nombre del profesor del curso es requerido!"),
   validField,
 ];
 
