@@ -16,6 +16,9 @@ router
     )
     .get(cursoController.getCursos);
 
+    router.route("/profesores")
+    .get(cursoController.getProfesores);
+
 router
     .route("/:id")
     .get(cursoController.getCurso)

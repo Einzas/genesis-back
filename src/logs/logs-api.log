@@ -67,3 +67,18 @@ notNull Violation: User.dni cannot be null || undefined undefined
 [2024-05-03T16:29:53.720Z] info: Table 'genesis.users' doesn't exist || undefined undefined
 [2024-05-03T16:31:15.130Z] info: User with that email not found! || undefined undefined
 [2024-05-03T16:31:17.846Z] info: User with that email not found! || undefined undefined
+[2024-05-03T16:40:29.661Z] info: No estas logueado! Por favor inicia sesión para obtener acceso. || undefined undefined
+[2024-05-03T16:41:30.956Z] info: Expected double-quoted property name in JSON at position 38 || undefined undefined
+[2024-05-03T16:41:32.115Z] info: No estas logueado! Por favor inicia sesión para obtener acceso. || undefined undefined
+[2024-05-03T16:42:20.322Z] info: Can't find /api/v1/categorias on this server! || undefined undefined
+[2024-05-03T16:42:31.321Z] info: Can't find /api/v1/categorias on this server! || undefined undefined
+[2024-05-03T16:42:47.982Z] info: Can't find /api/v1/categorias on this server! || undefined undefined
+[2024-05-03T16:43:05.005Z] info: Can't find /api/v1/categorias on this server! || undefined undefined
+[2024-05-03T16:43:12.177Z] info: Can't find /api/v1/categorias on this server! || undefined undefined
+[2024-05-03T16:45:56.481Z] info: No estas logueado! Por favor inicia sesión para obtener acceso. || undefined undefined
+[2024-05-03T16:47:21.397Z] info: Expected double-quoted property name in JSON at position 204 || undefined undefined
+[2024-05-03T16:47:42.367Z] info: notNull Violation: Curso.precio_curso cannot be null,
+notNull Violation: Curso.profesor_curso cannot be null || undefined undefined
+[2024-05-03T16:48:36.319Z] info: notNull Violation: Curso.profesor_curso cannot be null || undefined undefined
+[2024-05-03T16:48:38.157Z] info: notNull Violation: Curso.profesor_curso cannot be null || undefined undefined
+[2024-05-03T16:49:55.673Z] info: Can't find /api/v1/cursos on this server! || undefined undefined
