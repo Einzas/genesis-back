@@ -9,20 +9,20 @@ const router = express.Router();
 router.use(authMiddleware.protect);
 
 router
-    .route("/")
-    .post(
-        validationMiddleware.createSeccionCursoValidation,
-        seccionCursoController.createSeccionCurso
-    )
-    .get(seccionCursoController.getSeccionesCurso);
+  .route("/")
+  .post(
+    validationMiddleware.createSeccionCursoValidation,
+    seccionCursoController.createSeccionCurso
+  )
+  .get(seccionCursoController.getSeccionesCurso);
 
 router
-    .route("/:id")
-    .get(seccionCursoController.getSeccionCurso)
-    .patch(
-        validationMiddleware.createSeccionCursoValidation,
-        seccionCursoController.updateSeccionCurso
-    )
-    .delete(seccionCursoController.deleteSeccionCurso);
+  .route("/:id")
+  .get(seccionCursoController.getSeccionCurso)
+  .patch(
+    validationMiddleware.createSeccionCursoValidation,
+    seccionCursoController.updateSeccionCurso
+  )
+  .delete(seccionCursoController.deleteSeccionCurso);
 
 module.exports = router;

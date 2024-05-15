@@ -22,7 +22,6 @@ const seccionCursoRouter = require("./routes/curso/seccion_curso.routes");
 const leccionSeccionRouter = require("./routes/curso/leccion_seccion.routes");
 const contenidoLeccionRouter = require("./routes/curso/contenido_leccion.routes");
 
-
 const app = express();
 
 // Set security HTTP headers
@@ -69,9 +68,9 @@ app.use("/api/v1/roles-permissions", rolePermissionRouter);
 //cursos
 app.use("/api/v1/categorias", categoriaRouter);
 app.use("/api/v1/cursos", cursoRouter);
-app.use("/api/v1/secciones-cursos", seccionCursoRouter);
-app.use("/api/v1/lecciones-secciones", leccionSeccionRouter);
-app.use("/api/v1/contenidos-lecciones", contenidoLeccionRouter);
+app.use("/api/v1/cursos/secciones", seccionCursoRouter);
+app.use("/api/v1/cursos/lecciones", leccionSeccionRouter);
+app.use("/api/v1/cursos/contenidos", contenidoLeccionRouter);
 
 // Error handler
 app.all("*", (req, res, next) => {
